@@ -1,0 +1,47 @@
+body {
+  margin: 0;
+  padding: 0;
+  background: #fef6ff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  font-family: 'Comic Sans MS', cursive;
+}
+
+.container {
+  text-align: center;
+}
+
+.kucing {
+  font-size: 5rem;
+  animation: lompat 1s infinite ease-in-out;
+}
+
+.teks {
+  margin-top: 20px;
+  font-size: 1.2rem;
+  color: #ff69b4;
+  animation: goyang 2s infinite ease-in-out;
+}
+
+@keyframes lompat {
+  0%, 100% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(-60px);
+  }
+}
+
+@keyframes goyang {
+  0%, 100% {
+    transform: rotate(0deg);
+  }
+  25% {
+    transform: rotate(2deg);
+  }
+  75% {
+    transform: rotate(-2deg);
+  }
+}
